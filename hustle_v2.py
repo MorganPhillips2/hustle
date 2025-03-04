@@ -59,7 +59,8 @@ event_map = {
     "Open Forum":"Open Forum",
     "Five-Slide Friday":"Five-Slide Friday",
     "Student Showcase (Attendee)":"Showcase (Attendee)",
-    "Student Showcase (Presenter)":"Showcase (Presenter)"
+    "Student Showcase (Presenter)":"Showcase (Presenter)",
+    "PyData": "PyData"
 }
 ot['event'] = ot['event'].apply(lambda x: next((v for k, v in event_map.items() if k in x), x))
 
@@ -88,6 +89,7 @@ points = {
     "Open Forum":2,
     "Student Showcase":2,
     "TICKET Competition":2,
+    "PyData": 1 
 }
 
 # Calculate total points
